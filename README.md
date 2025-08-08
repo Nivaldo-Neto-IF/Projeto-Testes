@@ -110,6 +110,83 @@ Nivaldo Pereira da Silva Neto
 
 Vinícius Cavalcante Barbosa
 
+7 – Relação dos Testes Executados
+Nesta seção, são apresentados os resultados da execução da suíte de testes automatizados desenvolvida para o sistema Acess Smart. A suíte é composta por testes unitários tradicionais e por testes parametrizados, ambos criados com o framework JUnit 5. A execução foi realizada em ambiente de desenvolvimento e todos os testes foram concluídos com sucesso, indicando que as funcionalidades do sistema estão operando conforme o especificado.
+
+7.1 – Execução dos Testes Unitários (ProjetoTest.java)
+Foram executados 29 testes unitários que cobrem os principais fluxos de funcionalidades do sistema, incluindo cenários de sucesso e de falha. Todos os 29 testes passaram.
+
+Sumário da Execução:
+
+Total de testes executados: 29
+
+Testes que passaram: 29
+
+Testes que falharam: 0
+
+Resultado: ✅ SUCESSO
+
+Amostra de Testes Executados com Sucesso:
+
+✅ Teste de Login e Usuários: Deve logar com sucesso como admin
+
+✅ Teste de Login e Usuários: Deve falhar o login com dados inválidos
+
+✅ Teste de Login e Usuários: Não deve permitir registrar usuário que já existe
+
+✅ Teste de Gerenciamento de Recursos: Deve adicionar um novo recurso
+
+✅ Teste de Gerenciamento de Reservas: Deve criar uma nova reserva
+
+✅ Teste de Gerenciamento de Reservas: Não deve permitir alterar estado de reserva cancelada
+
+✅ Teste de Manutenção de Recursos: Deve impedir reserva durante manutenção agendada
+
+✅ Teste de Feedbacks e Relatórios: Deve gerar relatório de feedbacks
+
+7.2 – Execução dos Testes Parametrizados (ProjetoParameterizedTest.java)
+Foram executados 2 testes parametrizados, que se desdobraram em um total de 9 execuções individuais com diferentes conjuntos de dados, validando de forma eficiente múltiplos cenários com o mínimo de código.
+
+Sumário da Execução:
+
+Total de testes parametrizados: 2
+
+Total de invocações: 9
+
+Invocações com sucesso: 9
+
+Invocações com falha: 0
+
+Resultado: ✅ SUCESSO
+
+Detalhes da Execução:
+
+testeLoginParametrizado (4 invocações):
+
+[1] login=admin, senha=admin123, deveLogarComSucesso=true ➔ ✅ SUCESSO
+
+[2] login=user, senha=user123, deveLogarComSucesso=true ➔ ✅ SUCESSO
+
+[3] login=login_errado, senha=senha_errada, deveLogarComSucesso=false ➔ ✅ SUCESSO
+
+[4] login='', senha='', deveLogarComSucesso=false ➔ ✅ SUCESSO
+
+testeRegistroUsuarioParametrizado (5 invocações):
+
+[1] login=admin (existente) ➔ ✅ SUCESSO (Exceção esperada foi lançada)
+
+[2] nome='' ➔ ✅ SUCESSO (Exceção esperada foi lançada)
+
+[3] login='' ➔ ✅ SUCESSO (Exceção esperada foi lançada)
+
+[4] senha='' ➔ ✅ SUCESSO (Exceção esperada foi lançada)
+
+[5] login=NULL ➔ ✅ SUCESSO (Exceção esperada foi lançada)
+
+Conclusão dos Testes
+
+A execução de toda a suíte de testes foi concluída com 100% de sucesso. Isso demonstra que as funcionalidades implementadas no sistema Acess Smart, desde a autenticação de usuários até o gerenciamento de reservas e manutenções, estão operando conforme o especificado nos requisitos e nos casos de teste, atestando a robustez e a correção do código-fonte. Não foram encontradas falhas que necessitassem de indicações de correção.
+
 
 
 
