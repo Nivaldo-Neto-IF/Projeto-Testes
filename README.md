@@ -2,6 +2,7 @@ Acess Smart - Sistema de Gestão de Acessibilidade
 
 Acess Smart é um sistema de linha de comando para gestão de recursos de acessibilidade, desenvolvido como projeto final para a disciplina de Teste de Software do curso de Engenharia de Computação do IFPB - Campus Campina Grande.
 
+
 Índice
 
 Sobre o Projeto
@@ -17,6 +18,7 @@ Como Executar o Projeto
 Como Executar os Testes
 
 Autores
+
 
 1. Sobre o Projeto
 O objetivo do projeto é desenvolver um sistema de gestão de acessibilidade para o IFPB, permitindo que usuários e a administração identifiquem, monitorem e gerenciem recursos como rampas, elevadores e salas adaptadas. A aplicação busca otimizar o uso e a manutenção desses recursos, promovendo um ambiente mais inclusivo e acessível para estudantes, professores e funcionários.
